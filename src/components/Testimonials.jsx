@@ -121,7 +121,7 @@ const Testimonials = () => {
                                     />
                                 ))}
                             </div>
-                            <blockquote className="text-xl md:text-2xl text-gray-800 font-medium leading-relaxed mb-8 italic">
+                            <blockquote className="text-lg md:text-2xl text-gray-800 font-medium leading-relaxed mb-8 italic">
                                 "I recently used the BRICS joint motor. The quality of this motor is really excellent.
                                 The writing and application is also good. It fills the gaps between the walls well.
                                 So, there is no crack or damage. The color of the paint is also beautiful.

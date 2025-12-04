@@ -54,7 +54,7 @@ const Hero = () => {
                     // Wrap each word in a span that prevents breaking inside the word
                     return `<span class="word inline-block whitespace-nowrap">${chars}</span>`;
                 })
-                .join('<span class="inline-block">&nbsp;</span>'); // Add space between words
+                .join(' '); // Add space between words
 
             anime({
                 targets: titleRef.current.querySelectorAll('.char'),
@@ -63,7 +63,7 @@ const Hero = () => {
                 rotateX: [-90, 0],
                 easing: 'easeOutExpo',
                 duration: 1200,
-                delay: anime.stagger(30, { start: 300 })
+                delay: anime.stagger(30, { start: 0 })
             });
         }
 
@@ -193,7 +193,7 @@ const Hero = () => {
     };
 
     return (
-        <div className="relative min-h-screen w-full overflow-hidden bg-slate-950 flex flex-col justify-center">
+        <div className="relative min-h-screen w-full overflow-hidden bg-slate-950 flex flex-col justify-center pb-12">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(160,255,232,0.18),_transparent_55%)]" />
             <div className="absolute inset-0 opacity-30" style={{ backgroundImage: 'linear-gradient(135deg, rgba(255,255,255,0.06) 25%, transparent 25%), linear-gradient(225deg, rgba(255,255,255,0.05) 25%, transparent 25%), linear-gradient(45deg, rgba(255,255,255,0.06) 25%, transparent 25%), linear-gradient(315deg, rgba(255,255,255,0.05) 25%, rgba(0,0,0,0) 25%)', backgroundSize: '60px 60px', backgroundPosition: '0 0, 0 30px, 30px -30px, -30px 0' }} />
             {/* Floating Particles Container */}
@@ -245,7 +245,7 @@ const Hero = () => {
             </div>
 
             {/* Content */}
-            <div className="relative h-full flex flex-col justify-center items-center text-center px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto z-20">
+            <div className="relative h-full flex flex-col justify-center items-center text-center px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto z-20 pt-32">
                 <div
                     ref={highlightRef}
                     className="flex items-center gap-2 px-5 py-2 rounded-full border border-white/30 bg-white/10 text-white text-sm font-semibold uppercase tracking-[0.2em] shadow-lg backdrop-blur-md mb-6 opacity-0"
@@ -255,31 +255,31 @@ const Hero = () => {
                 </div>
                 <h1
                     ref={titleRef}
-                    className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-6 tracking-tight leading-tight"
+                    className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 tracking-tight leading-tight"
                 >
                     Building the Future with Strength & Innovation
                 </h1>
                 <p
                     ref={subtitleRef}
-                    className="text-lg md:text-xl text-gray-200 mb-10 max-w-3xl opacity-0"
+                    className="text-base sm:text-lg md:text-xl text-gray-200 mb-10 max-w-3xl opacity-0 px-4"
                 >
                     Premium quality construction materials from MNS Corrosions Solutions.
                     Sri Ram AAC Blocks & Advanced Joint Mortars for durable, sustainable structures.
                 </p>
                 <div
                     ref={buttonsRef}
-                    className="flex flex-col sm:flex-row gap-4"
+                    className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto px-4 sm:px-0"
                 >
-                    <Button size="lg" className="text-lg px-8 py-6 bg-emerald-200 text-black hover:border-white hover:border hover:bg-transparent hover:text-white" asChild>
+                    <Button size="lg" className="text-lg px-8 py-6 bg-emerald-200 text-black hover:border-white hover:border hover:bg-transparent hover:text-white w-full sm:w-auto" asChild>
                         <a href="#products">Explore Products</a>
                     </Button>
-                    <Button size="lg" variant="outline" className="text-lg px-8 py-6 bg-transparent text-white border-white hover:bg-emerald-200 hover:text-black opacity-0" asChild>
+                    <Button size="lg" variant="outline" className="text-lg px-8 py-6 bg-transparent text-white border-white hover:bg-emerald-200 hover:text-black opacity-0 w-full sm:w-auto" asChild>
                         <a href="#contact">Contact Us <ArrowRight className="ml-2 h-5 w-5" /></a>
                     </Button>
                 </div>
 
                 {/* Mobile Features (Visible only on small screens) */}
-                <div className="xl:hidden mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4 w-full">
+                <div className="xl:hidden mt-12 grid grid-cols-1 sm:grid-cols-2 gap-4 w-full px-4">
                     <div className="backdrop-blur-lg bg-white/10 border border-white/20 rounded-2xl p-4 text-left text-white shadow-lg">
                         <p className="text-sm text-emerald-300 mb-1">Thermal Comfort</p>
                         <p className="text-xl font-semibold">38% better insulation</p>
@@ -289,7 +289,7 @@ const Hero = () => {
                         <p className="text-xl font-semibold">Up to 4x lighter</p>
                     </div>
                 </div>
-                <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-4 w-full">
+                <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-4 w-full max-w-full">
                     {[
                         { label: 'Projects Delivered', value: '450+' },
                         { label: 'Monthly Production', value: '50 MT' },

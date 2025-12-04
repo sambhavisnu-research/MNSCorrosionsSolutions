@@ -132,7 +132,7 @@ const TechnicalData = () => {
                     <Table>
                         <TableHeader>
                             <TableRow className="bg-gray-100 hover:bg-gray-100">
-                                <TableHead className="font-bold text-gray-900 text-lg py-5 pl-6">
+                                <TableHead className="font-bold text-gray-900 text-lg py-5 pl-4 md:pl-6">
                                     Property
                                 </TableHead>
                                 <TableHead className="font-bold text-gray-900 text-lg py-5">
@@ -157,7 +157,7 @@ const TechnicalData = () => {
                                         ${index % 2 === 0 ? "bg-gray-50/40" : "bg-white"}
                                     `}
                                 >
-                                    <TableCell className="font-medium text-base py-5 pl-6">
+                                    <TableCell className="font-medium text-base py-5 pl-4 md:pl-6">
                                         {row.property}
                                     </TableCell>
 

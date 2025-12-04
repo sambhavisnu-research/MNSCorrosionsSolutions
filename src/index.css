@@ -78,9 +78,11 @@
   0% {
     transform: rotate(-4deg) translateY(0px);
   }
+
   50% {
     transform: rotate(-4deg) translateY(-10px);
   }
+
   100% {
     transform: rotate(-4deg) translateY(0px);
   }
@@ -90,9 +92,11 @@
   0% {
     transform: rotate(4deg) translateY(0px);
   }
+
   50% {
     transform: rotate(4deg) translateY(12px);
   }
+
   100% {
     transform: rotate(4deg) translateY(0px);
   }
@@ -105,5 +109,6 @@
 
   body {
     @apply bg-background text-foreground;
+    overflow-x: hidden;
   }
 }

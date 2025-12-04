@@ -69,7 +69,7 @@ const WhyChooseUs = () => {
                         y: 0,
                         scale: 1,
                         duration: 0.7,
-                        ease: 'back.out(1.4)',
+                        ease: 'power2.out',
                         scrollTrigger: {
                             trigger: card,
                             start: 'top 85%',
@@ -122,7 +122,7 @@ const WhyChooseUs = () => {
                             rotate: [0, 360],
                             opacity: [0, 1],
                             duration: 800,
-                            easing: 'easeOutElastic(1, .6)',
+                            easing: 'easeOutQuad',
                             delay: index * 100
                         });
                     }

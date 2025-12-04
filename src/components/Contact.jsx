@@ -205,7 +205,7 @@ const Contact = () => {
                                     </div>
                                     <div>
                                         <p className="text-sm text-gray-400">Email Us</p>
-                                        <a href="mailto:malathibrickindustry@gmail.com" className="text-lg font-semibold text-white hover:text-emerald-200">malathibrickindustry@gmail.com</a>
+                                        <a href="mailto:malathibrickindustry@gmail.com" className="text-lg font-semibold text-white hover:text-emerald-200 break-all">malathibrickindustry@gmail.com</a>
                                     </div>
                                 </CardContent>
                             </Card>
@@ -245,7 +245,7 @@ const Contact = () => {
                     </div>
 
                     {/* Map */}
-                    <div className="h-[400px] lg:h-full rounded-2xl overflow-hidden shadow-2xl border border-gray-700">
+                    <div className="h-[300px] md:h-[400px] lg:h-full rounded-2xl overflow-hidden shadow-2xl border border-gray-700">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.263587278836!2d79.8281853!3d10.943450700000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a551735c2640dd3%3A0x3ee55cffbc488d8c!2sSri%20Ram%20AAC%20Blocks%20and%20Tiles!5e0!3m2!1sen!2sin!4v1764345673315!5m2!1sen!2sin"
                             width="100%"
